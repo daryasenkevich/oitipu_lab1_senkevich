@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    android:orientation="vertical"
+    tools:context=".presentation.MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="67dp">
+            <TextView
+                android:id="@+id/math_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:ellipsize="start"
+                android:layout_gravity="end"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="67dp">
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="117dp"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:layout_gravity="end"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="7dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:textColor="@color/black2"
+            android:textSize="37sp" />
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sin_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="sin" />
+
+            <TextView
+                android:id="@+id/cos_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="cos" />
+
+            <TextView
+                android:id="@+id/tan_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="tan" />
+
+            <TextView
+                android:id="@+id/all_clean_btn"
+                style="@style/ActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="AC" />
+
+            <TextView
+                android:id="@+id/open_bracket"
+                style="@style/ActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="(" />
+
+            <TextView
+                android:id="@+id/close_bracket"
+                style="@style/ActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text=")" />
+
+            <TextView
+                android:id="@+id/dev_btn"
+                style="@style/ActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="/" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ten_power_x_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="10^x" />
+
+            <TextView
+                android:id="@+id/log_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="log" />
+
+            <TextView
+                android:id="@+id/ln_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="ln" />
+
+            <TextView
+                android:id="@+id/btn_7"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/btn_8"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/btn_9"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/mult_btn"
+                style="@style/ActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="*" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/factorial_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="x!" />
+
+            <TextView
+                android:id="@+id/radical_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="√x" />
+
+            <TextView
+                android:id="@+id/one_dev_x_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="1/x" />
+
+            <TextView
+                android:id="@+id/btn_4"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/btn_5"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/btn_6"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/plus_btn"
+                style="@style/ActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/x_power_y_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="x^y" />
+
+            <TextView
+                android:id="@+id/x_power_3_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="x^3" />
+
+            <TextView
+                android:id="@+id/x_power_2_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="x^2" />
+
+            <TextView
+                android:id="@+id/btn_1"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/btn_2"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/btn_3"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/minus_btn"
+                style="@style/ActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pi_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="π" />
+
+            <TextView
+                android:id="@+id/exp_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="e" />
+
+            <TextView
+                android:id="@+id/percent_btn"
+                style="@style/EngActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="%" />
+
+            <TextView
+                android:id="@+id/dot_btn"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="." />
+
+            <TextView
+                android:id="@+id/btn_0"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:text="0" />
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                style="@style/NumberButton"
+                android:fontFamily="sans-serif-light"
+                android:src="@drawable/ic_baseline_backspace_30" />
+
+            <TextView
+                android:id="@+id/equal_btn"
+                style="@style/ActionButton"
+                android:fontFamily="sans-serif-light"
+                android:text="=" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
